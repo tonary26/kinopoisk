@@ -18,6 +18,7 @@ return new class extends Migration
             $table->char('title', 200);
             $table->string('description');
             $table->unsignedInteger('grade');
+            $table->softDeletes();
         });
     }
 
