@@ -1,0 +1,41 @@
+.cart-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    color: white;
+    margin: 50px;
+}
+
+.cart-image {
+    width: 300px;
+    border: 5px solid black;
+    flex-shrink: 0;
+}
+
+.film-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cart-info {
+    max-width: 600px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.cart-info span {
+     font-weight: bold;
+ }
+
+.upd-button {
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+}
+
+.upd-button a {
+    text-decoration: none;
+    color: white;
+}

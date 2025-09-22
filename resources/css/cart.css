@@ -1,0 +1,76 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.main-bg {
+    padding-right: 30px;
+}
+
+.film-cart {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px;
+    height: 600px;
+    border: 5px solid black;
+    margin-right: 40px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgb(13, 13, 15);
+    color: rgb(255, 255, 255);
+}
+
+.film-cart:last-child {
+    margin-right: 0;
+}
+
+.cart-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.film-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-title {
+    font-weight: 700;
+}
+
+.cart-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cart-grade {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delete-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 70px;
+    background-color: red;
+    text-align: center;
+    top: 550px;
+}
+
+.delete-btn a {
+    text-decoration: none;
+    color: white;
+}
+
