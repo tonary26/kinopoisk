@@ -15,13 +15,12 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('image');
-            $table->char('title', 200);
-            $table->string('description');
-            $table->unsignedInteger('grade');
+            $table->string('title', 200);
+            $table->text('description');
+            $table->unsignedInteger('grade')->default(0);
             $table->softDeletes();
         });
     }
-
     /**
      * Reverse the migrations.
      */
