@@ -15,4 +15,4 @@ Route::get('/show/{film}', [FilmController::class, 'show'])->name('film.get');
 Route::get('/{film}/update', [FilmController::class, 'update'])->name('film.update');
 Route::patch('/{film}/edit', [FilmController::class, 'edit'])->name('film.edit');
 
-Route::get('/delete/{film}', [FilmController::class, 'delete'])->name('film.delete');
+Route::delete('/delete/{film}', [FilmController::class, 'delete'])->name('film.delete');

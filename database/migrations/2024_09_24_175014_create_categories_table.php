@@ -11,21 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('films', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->timestamps();
-            $table->string('image');
-            $table->string('title', 200);
-            $table->text('description');
-            $table->unsignedInteger('grade')->default(0);
-            $table->softDeletes();
         });
     }
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('films');
+        Schema::dropIfExists('categories');
     }
 };

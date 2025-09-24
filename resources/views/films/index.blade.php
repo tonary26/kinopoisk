@@ -19,11 +19,16 @@
                     <p>{{ $film->description }}</p>
                 </div>
                 <div class="cart-grade">
+                    <p>{{ $film->category->title }}</p>
+                </div>
+                <div class="cart-grade">
                     <span>{{ $film->grade }}⭐</span>
                 </div>
-                <div class="delete-btn">
-                    <a href="{{ route('film.delete', $film->id) }}">Удалить</a>
-                </div>
+                <form action="{{ route('film.delete', $film->id) }}" method="post">
+                    @csrf
+                    @method('delete')
+                    <input class="delete-btn" type="submit" value="Удалить">
+                </form>
             </div>
         @endforeach
     </div>
